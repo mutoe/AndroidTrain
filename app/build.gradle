@@ -3,6 +3,10 @@ plugins {
     id 'kotlin-android'
 }
 
+def localPropertiesFile = rootProject.file("local.properties")
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(localPropertiesFile))
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -17,12 +21,32 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        debug {
+            storeFile file("../debug.jks")
+            storePassword localProperties['debugStorePassword']
+            keyAlias "debug"
+            keyPassword localProperties['debugKeyPassword']
+        }
+        release {
+            storeFile file("../release.jks")
+            storePassword localProperties['releaseStorePassword']
+            keyAlias "release"
+            keyPassword localProperties['releaseKeyPassword']
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
