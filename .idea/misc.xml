@@ -11,7 +11,11 @@
         <entry key="app/src/main/res/drawable/textbox.xml" value="0.4935185185185185" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2753623188405797" />
         <entry key="app/src/main/res/layout/constraint_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_android.xml" value="0.2767210144927536" />
+        <entry key="app/src/main/res/layout/fragment_java.xml" value="0.2767210144927536" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/my_fragment_activity.xml" value="0.2767210144927536" />
+        <entry key="app/src/main/res/layout/my_fragment_layout.xml" value="0.2753623188405797" />
       </map>
     </option>
   </component>

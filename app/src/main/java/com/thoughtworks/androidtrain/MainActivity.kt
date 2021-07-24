@@ -1,7 +1,6 @@
 package com.thoughtworks.androidtrain
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.util.Log
@@ -57,8 +56,10 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, cursor?.count.toString())
 
             if (cursor?.moveToFirst() == true) {
-                val contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME))
-                val contactNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER))
+                val contactName =
+                    cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME))
+                val contactNumber =
+                    cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER))
                 cursor.close()
 
                 Log.d(TAG, "$contactName $contactNumber")
@@ -67,5 +68,10 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    fun openMyFragment(view: View) {
+        val intent = Intent(this, MyFragmentActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -13,5 +13,6 @@
     <color name="text_placeholder">#FFE4E4E4</color>
     <color name="text_primary">#FF222222</color>
     <color name="text_secondary">#FFB2B2B2</color>
+    <color name="fragment_background">#FF007AFF</color>
 
 </resources>
