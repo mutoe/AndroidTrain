@@ -22,4 +22,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ConstraintActivity::class.java)
         startActivity(intent)
     }
+
+    fun openLoginActivity(view: View) {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
 }

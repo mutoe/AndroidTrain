@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/aware"
+        android:src="@drawable/fill_1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="77.7dp"
+        android:autofillHints="@string/username"
+        android:background="@drawable/textbox"
+        android:gravity="center_vertical"
+        android:hint="@string/username"
+        android:inputType="textAutoComplete"
+        android:paddingHorizontal="12dp"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="@string/password"
+        android:background="@drawable/textbox"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        />
+
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22.5dp"
+        android:text="@string/remember_me"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22.5dp"
+        android:background="@drawable/button_primary"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@id/remember"
+        />
+
+    <TextView
+        android:id="@+id/or_connect_with"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26.5dp"
+        android:text="@string/or_connect_with"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29.5dp"
+        android:contentDescription="@string/facebook"
+        android:src="@drawable/fb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or_connect_with"
+        />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29.5dp"
+        android:contentDescription="@string/twitter"
+        android:src="@drawable/tw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or_connect_with"
+        />
+
+    <android.widget.Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44.5dp"
+        android:background="@drawable/button_secondary"
+        android:text="@string/sign_up_with_e_mail"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/text_size_md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

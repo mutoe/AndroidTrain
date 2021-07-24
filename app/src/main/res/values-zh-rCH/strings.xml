@@ -2,7 +2,6 @@
     <string name="app_name">AndroidTrain</string>
     <string name="practice">Android practice</string>
     <string name="button1">按钮1</string>
-    <string name="button2">按钮2</string>
     <string name="button3">按钮3</string>
     <string name="button4">按钮4</string>
     <string name="button5">按钮5</string>
@@ -11,4 +10,11 @@
     <string name="button8">按钮8</string>
     <string name="button9">按钮9</string>
     <string name="button10">按钮10</string>
+    <string name="login">登录</string>
+    <string name="or_connect_with">或使用</string>
+    <string name="sign_up_with_e_mail">使用 Email 登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="remember_me">记住我</string>
+    <string name="forgot_password">忘记密码？</string>
 </resources>
