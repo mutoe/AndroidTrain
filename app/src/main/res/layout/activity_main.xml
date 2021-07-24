@@ -53,6 +53,7 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/gray"
                 android:text="@string/button3"
+                android:onClick="openContact"
                 />
 
             <Button
