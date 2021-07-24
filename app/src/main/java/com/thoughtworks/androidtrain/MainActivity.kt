@@ -74,4 +74,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MyFragmentActivity::class.java)
         startActivity(intent)
     }
+
+    fun openRecyclerView(view: View) {
+        val intent = Intent(this, RecyclerViewActivity::class.java)
+        startActivity(intent)
+    }
 }

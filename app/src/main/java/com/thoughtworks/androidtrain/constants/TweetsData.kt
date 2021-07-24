@@ -1,4 +1,4 @@
-package com.thoughtworks.androidtrain
+package com.thoughtworks.androidtrain.constants
 
 class TweetsData() {
     companion object {

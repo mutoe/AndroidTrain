@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTrain">
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".MyFragmentActivity"
             android:exported="true" />
         <activity android:name=".LoginActivity" />

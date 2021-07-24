@@ -3,7 +3,7 @@
     <string name="button1">Button 1</string>
     <string name="button3">pick_contact</string>
     <string name="button4">fragment</string>
-    <string name="button5">Button 5</string>
+    <string name="button5">recycler_view</string>
     <string name="button6">Button 6</string>
     <string name="button7">Button 7</string>
     <string name="button8">Button 8</string>
@@ -27,4 +27,5 @@
     <string name="java" translatable="false">Java</string>
     <string name="android_fragment" translatable="false">Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</string>
     <string name="java_fragment" translatable="false">Java is a High Level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</string>
+    <string name="avatar" translatable="false">avatar</string>
 </resources>
