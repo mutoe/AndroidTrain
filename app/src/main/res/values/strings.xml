@@ -28,4 +28,5 @@
     <string name="android_fragment" translatable="false">Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</string>
     <string name="java_fragment" translatable="false">Java is a High Level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</string>
     <string name="avatar" translatable="false">avatar</string>
+    <string name="reached_the_bottom">Reached the bottom</string>
 </resources>

@@ -17,4 +17,5 @@
     <string name="password">密码</string>
     <string name="remember_me">记住我</string>
     <string name="forgot_password">忘记密码？</string>
+    <string name="reached_the_bottom">到底了</string>
 </resources>
